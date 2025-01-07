@@ -1,0 +1,15 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F3E5D3;
+}
+
+svg {
+  width: 100%;
+  cursor: pointer;
+}
