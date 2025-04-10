@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Orders Table</title>
+<style>
+  body {
+    font-family: sans-serif;
+  }
+
+  .placeholder {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 16px;
+    width: 80%;
+    margin: 5px auto;
+  }
+
+  .placeholder.wide {
+    width: 95%;
+  }
+
+  .placeholder.small {
+    width: 40%;
+  }
+</style>
+</head>
+<body>
+
+<h2>Orders</h2>
+<table id="tableSkeleton" class="ordersManagmentTable display display responsive nowrap tblalign table pt-1 no-footer dtr-inline collapsed dataTable" style="width: 100%;" aria-describedby="tableSkeleton_info" role="grid"><thead class="theadrow">
+                                            <tr style="background-color: rgb(243, 246, 249) !important; height: 0px;" role="row"><th class="bortxt sorting_asc sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 147.988px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-sort="ascending" aria-label="Customer: activate to sort column descending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Customer</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 95.675px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Order Title: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Order Title</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 118.787px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Order ID: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Order ID</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 199.538px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Date: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Date</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 107.45px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Order value: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Order value</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 69.5px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="tax: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">tax</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 93.125px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Payments: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Payments</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 115.512px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Payment Out: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Payment Out</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 179.087px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Purchase Order Value: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Purchase Order Value</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 87.0125px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Payables: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Payables</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 108.137px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Receivables: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Receivables</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 55.8125px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Tags: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Tags</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 152.575px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Status: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Status</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 118.262px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Pickup Status: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Pickup Status</div></th><th class="bortxt sorting_disabled" aria-controls="tableSkeleton" rowspan="1" colspan="1" style="width: 188.262px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Pickup Date: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Pickup Date</div></th></tr>
+                                        </thead>
+
+
+                                        
+                                        <tbody id="ordersManagmentTable" style="opacity: 1;"><tr role="row" class="odd">
+            <td> <span class="viewbtn">usercomp</span><br>   <p class="header-effect">
+                <a data-bs-tooltip="tooltip" href="https://production.loyalwings.com/Orders/viewOrder/602">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/view.svg" height="15px" width="15px" alt=""> </span>
+                </a>
+                <a onclick="showModal('https://production.loyalwings.com/Orders/updateOrders/602','Edit Orders')" data-bs-tooltip="tooltip">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/edit.svg" height="15px" width="15px" alt=""> </span>
+                </a>
+                <a data-bs-tooltip="tooltip" onclick="deleteRowsOreder('https://production.loyalwings.com/Orders/deleteRowsOreder/602')">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt=""></span>
+                </a>
+                 <span class="action-buttons" style="display:none;">
+                        <a href="javascript:void(0)" class="delete-btn" data-bs-toggle="tooltip" data-bs-title="Excel" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Excel">
+                        </a>
+                        <a href="javascript:void(0)" class="pdf-btn" data-bs-toggle="tooltip" data-bs-title="Pdf" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Pdf">
+                        </a>
+                        <a href="javascript:void(0)" class="delete-btn" data-bs-toggle="tooltip" data-bs-title="Print" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Print">
+                        </a>
+                    </span>
+
+                        <a onclick="toggleActions(this)" href="javascript:void(0)" class="plus-button" data-bs-toggle="tooltip" data-bs-title="Expand Actions" style="display: none;">
+                        <i class="bi bi-plus"></i>
+                    </a>
+                
+                <span style="cursor: pointer; margin-left: 5px;">...</span></p>              
+            </td>
+            <td>userorder</td>
+            <td><button style="width: 12px; height: 12px; border-radius: 50%; border: none;  cursor: pointer; outline: none;  background-color:#ff8698; margin-right:15px!important" id="button602" onclick="changeColorOrder(602, 2)" class="buttonNew red" data-priority="2" title="Medium"></button>ord-0002        
+                
+            </td>
+            <td>11th Dec 24 - 21st Dec 24</td>
+            <td> <span style="color: green;">148,500.00</span></td>
+            <td> <span style="color: grey;">500.00</span></td>
+            <td> <span style="color: green;">138000.00</span></td>
+            <td> <span style="color: red;">0</span></td>
+            <td> <span style="color: red;">0</span></td>
+            <td> <span style="color: orange;">0</span></td>
+            <td> <span style="color: orange;">10500.00</span></td>
+            <td><br><br><div class="avatar-wrapper"></div></td>
+
+            <td><span class="square-label on-hold-label">Processing</span> <span class="ms-2">0 / 0</span></td>
+            <td><button type="button" id="stbutton_602" class=" status-button  dropdown-toggle dd-toggle" style="color:#F59802!important; border: 1px solid #F59802 !important; " data-bs-toggle="dropdown">vvcc</button>
+                                            <ul class="dropdown-menu new-menu dropshow">
+                                                <li><a class="dropdown-item selid602 selected28" id="selectOptionValue_602" href="javascript:void(0);" onclick="changestatusNew(602,28)">Pickup 1</a></li><li><a class="dropdown-item selid602 selected29" id="selectOptionValue_602" href="javascript:void(0);" onclick="changestatusNew(602,29)">Pickup 2</a></li><li><a class="dropdown-item selid602 selected44" id="selectOptionValue_602" href="javascript:void(0);" onclick="changestatusNew(602,44)">standard</a></li><li><a class="dropdown-item selid602 selected78" id="selectOptionValue_602" href="javascript:void(0);" onclick="changestatusNew(602,78)">shirt2</a></li><li><a class="dropdown-item selid602 selected88" id="selectOptionValue_602" href="javascript:void(0);" onclick="changestatusNew(602,88)">rrtyyy</a></li><li><a class="dropdown-item selid602 selected89" id="selectOptionValue_602" href="javascript:void(0);" onclick="changestatusNew(602,89)">23</a></li><li><a class="dropdown-item selid602 selected90" id="selectOptionValue_602" href="javascript:void(0);" onclick="changestatusNew(602,90)">bv</a></li><li><a class="dropdown-item selid602 selected92" id="selectOptionValue_602" href="javascript:void(0);" onclick="changestatusNew(602,92)">vvcc</a></li>
+                                            </ul></td>
+            <td>11th Dec 2024 03:51:44</td>
+
+            
+                                            
+         </tr><tr role="row" class="even">
+            <td> <span class="viewbtn">testcompany1</span><br>   <p class="header-effect">
+                <a data-bs-tooltip="tooltip" href="https://production.loyalwings.com/Orders/viewOrder/583">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/view.svg" height="15px" width="15px" alt=""> </span>
+                </a>
+                <a onclick="showModal('https://production.loyalwings.com/Orders/updateOrders/583','Edit Orders')" data-bs-tooltip="tooltip">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/edit.svg" height="15px" width="15px" alt=""> </span>
+                </a>
+                <a data-bs-tooltip="tooltip" onclick="deleteRowsOreder('https://production.loyalwings.com/Orders/deleteRowsOreder/583')">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt=""></span>
+                </a>
+                 <span class="action-buttons" style="display:none;">
+                        <a href="javascript:void(0)" class="delete-btn" data-bs-toggle="tooltip" data-bs-title="Excel" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Excel">
+                        </a>
+                        <a href="javascript:void(0)" class="pdf-btn" data-bs-toggle="tooltip" data-bs-title="Pdf" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Pdf">
+                        </a>
+                        <a href="javascript:void(0)" class="delete-btn" data-bs-toggle="tooltip" data-bs-title="Print" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Print">
+                        </a>
+                    </span>
+
+                        <a onclick="toggleActions(this)" href="javascript:void(0)" class="plus-button" data-bs-toggle="tooltip" data-bs-title="Expand Actions" style="display: none;">
+                        <i class="bi bi-plus"></i>
+                    </a>
+                
+                <span style="cursor: pointer; margin-left: 5px;">...</span></p>              
+            </td>
+            <td>checker</td>
+            <td><button style="width: 12px; height: 12px; border-radius: 50%; border: none;  cursor: pointer; outline: none;  background-color:#ff8698; margin-right:15px!important" id="button583" onclick="changeColorOrder(583, 2)" class="buttonNew red" data-priority="2" title="Medium"></button>ord-0004        
+                
+            </td>
+            <td>27th Nov 24 - 7th Dec 24</td>
+            <td> <span style="color: green;">148,500.00</span></td>
+            <td> <span style="color: grey;">500.00</span></td>
+            <td> <span style="color: green;">138000.00</span></td>
+            <td> <span style="color: red;">0</span></td>
+            <td> <span style="color: red;">0</span></td>
+            <td> <span style="color: orange;">0</span></td>
+            <td> <span style="color: orange;">10500.00</span></td>
+            <td><br><br><div class="avatar-wrapper"><div class="avatar-group "> <div class="avatar "><a href="https://production.loyalwings.com/setup/view-staff/1005"><img src="https://production.loyalwings.com/uploads/staff/1724069348_3c86ef7515accf82e1db.png" alt="" class="htimg" style="border-radius: 16px;background-color:#edf2ff;" data-toggle="tooltip" data-html="true" data-placement="top" title="test1 "></a></div></div></div></td>
+
+            <td><span class="square-label on-hold-label">Processing</span> <span class="ms-2">0 / 0</span></td>
+            <td><button type="button" id="stbutton_583" class=" status-button  dropdown-toggle dd-toggle" style="color:#F59802!important; border: 1px solid #F59802 !important; " data-bs-toggle="dropdown">vvcc</button>
+                                            <ul class="dropdown-menu new-menu dropshow">
+                                                <li><a class="dropdown-item selid583 selected28" id="selectOptionValue_583" href="javascript:void(0);" onclick="changestatusNew(583,28)">Pickup 1</a></li><li><a class="dropdown-item selid583 selected29" id="selectOptionValue_583" href="javascript:void(0);" onclick="changestatusNew(583,29)">Pickup 2</a></li><li><a class="dropdown-item selid583 selected44" id="selectOptionValue_583" href="javascript:void(0);" onclick="changestatusNew(583,44)">standard</a></li><li><a class="dropdown-item selid583 selected78" id="selectOptionValue_583" href="javascript:void(0);" onclick="changestatusNew(583,78)">shirt2</a></li><li><a class="dropdown-item selid583 selected88" id="selectOptionValue_583" href="javascript:void(0);" onclick="changestatusNew(583,88)">rrtyyy</a></li><li><a class="dropdown-item selid583 selected89" id="selectOptionValue_583" href="javascript:void(0);" onclick="changestatusNew(583,89)">23</a></li><li><a class="dropdown-item selid583 selected90" id="selectOptionValue_583" href="javascript:void(0);" onclick="changestatusNew(583,90)">bv</a></li><li><a class="dropdown-item selid583 selected92" id="selectOptionValue_583" href="javascript:void(0);" onclick="changestatusNew(583,92)">vvcc</a></li>
+                                            </ul></td>
+            <td>27th Nov 2024 01:28:35</td>
+
+            
+                                            
+         </tr><tr role="row" class="odd">
+            <td> <span class="viewbtn">test112</span><br>   <p class="header-effect">
+                <a data-bs-tooltip="tooltip" href="https://production.loyalwings.com/Orders/viewOrder/576">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/view.svg" height="15px" width="15px" alt=""> </span>
+                </a>
+                <a onclick="showModal('https://production.loyalwings.com/Orders/updateOrders/576','Edit Orders')" data-bs-tooltip="tooltip">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/edit.svg" height="15px" width="15px" alt=""> </span>
+                </a>
+                <a data-bs-tooltip="tooltip" onclick="deleteRowsOreder('https://production.loyalwings.com/Orders/deleteRowsOreder/576')">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt=""></span>
+                </a>
+                 <span class="action-buttons" style="display:none;">
+                        <a href="javascript:void(0)" class="delete-btn" data-bs-toggle="tooltip" data-bs-title="Excel" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Excel">
+                        </a>
+                        <a href="javascript:void(0)" class="pdf-btn" data-bs-toggle="tooltip" data-bs-title="Pdf" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Pdf">
+                        </a>
+                        <a href="javascript:void(0)" class="delete-btn" data-bs-toggle="tooltip" data-bs-title="Print" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Print">
+                        </a>
+                    </span>
+
+                        <a onclick="toggleActions(this)" href="javascript:void(0)" class="plus-button" data-bs-toggle="tooltip" data-bs-title="Expand Actions" style="display: none;">
+                        <i class="bi bi-plus"></i>
+                    </a>
+                
+                <span style="cursor: pointer; margin-left: 5px;">...</span></p>              
+            </td>
+            <td>order2</td>
+            <td><button style="width: 12px; height: 12px; border-radius: 50%; border: none;  cursor: pointer; outline: none;  background-color:#ff8698; margin-right:15px!important" id="button576" onclick="changeColorOrder(576, 2)" class="buttonNew red" data-priority="2" title="Medium"></button>ord-0003        
+                
+            </td>
+            <td>26th Nov 24 - 6th Dec 24</td>
+            <td> <span style="color: green;">148,500.00</span></td>
+            <td> <span style="color: grey;">500.00</span></td>
+            <td> <span style="color: green;">138000.00</span></td>
+            <td> <span style="color: red;">0</span></td>
+            <td> <span style="color: red;">0</span></td>
+            <td> <span style="color: orange;">0</span></td>
+            <td> <span style="color: orange;">10500.00</span></td>
+            <td><br><br><div class="avatar-wrapper"></div></td>
+
+            <td><span class="square-label on-hold-label">Processing</span> <span class="ms-2">0 / 0</span></td>
+            <td><button type="button" id="stbutton_576" class=" status-button  dropdown-toggle dd-toggle" style="color:#F59802!important; border: 1px solid #F59802 !important; " data-bs-toggle="dropdown">vvcc</button>
+                                            <ul class="dropdown-menu new-menu dropshow">
+                                                <li><a class="dropdown-item selid576 selected28" id="selectOptionValue_576" href="javascript:void(0);" onclick="changestatusNew(576,28)">Pickup 1</a></li><li><a class="dropdown-item selid576 selected29" id="selectOptionValue_576" href="javascript:void(0);" onclick="changestatusNew(576,29)">Pickup 2</a></li><li><a class="dropdown-item selid576 selected44" id="selectOptionValue_576" href="javascript:void(0);" onclick="changestatusNew(576,44)">standard</a></li><li><a class="dropdown-item selid576 selected78" id="selectOptionValue_576" href="javascript:void(0);" onclick="changestatusNew(576,78)">shirt2</a></li><li><a class="dropdown-item selid576 selected88" id="selectOptionValue_576" href="javascript:void(0);" onclick="changestatusNew(576,88)">rrtyyy</a></li><li><a class="dropdown-item selid576 selected89" id="selectOptionValue_576" href="javascript:void(0);" onclick="changestatusNew(576,89)">23</a></li><li><a class="dropdown-item selid576 selected90" id="selectOptionValue_576" href="javascript:void(0);" onclick="changestatusNew(576,90)">bv</a></li><li><a class="dropdown-item selid576 selected92" id="selectOptionValue_576" href="javascript:void(0);" onclick="changestatusNew(576,92)">vvcc</a></li>
+                                            </ul></td>
+            <td>26th Nov 2024 06:59:10</td>
+
+            
+                                            
+         </tr><tr role="row" class="even">
+            <td> <span class="viewbtn">test112</span><br>   <p class="header-effect">
+                <a data-bs-tooltip="tooltip" href="https://production.loyalwings.com/Orders/viewOrder/575">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/view.svg" height="15px" width="15px" alt=""> </span>
+                </a>
+                <a onclick="showModal('https://production.loyalwings.com/Orders/updateOrders/575','Edit Orders')" data-bs-tooltip="tooltip">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/edit.svg" height="15px" width="15px" alt=""> </span>
+                </a>
+                <a data-bs-tooltip="tooltip" onclick="deleteRowsOreder('https://production.loyalwings.com/Orders/deleteRowsOreder/575')">
+                <span class=""><img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt=""></span>
+                </a>
+                 <span class="action-buttons" style="display:none;">
+                        <a href="javascript:void(0)" class="delete-btn" data-bs-toggle="tooltip" data-bs-title="Excel" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Excel">
+                        </a>
+                        <a href="javascript:void(0)" class="pdf-btn" data-bs-toggle="tooltip" data-bs-title="Pdf" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Pdf">
+                        </a>
+                        <a href="javascript:void(0)" class="delete-btn" data-bs-toggle="tooltip" data-bs-title="Print" style="display: none;">
+                            <img src="https://production.loyalwings.com/assets/img/delete.svg" height="15px" width="15px" alt="Print">
+                        </a>
+                    </span>
+
+                        <a onclick="toggleActions(this)" href="javascript:void(0)" class="plus-button" data-bs-toggle="tooltip" data-bs-title="Expand Actions" style="display: none;">
+                        <i class="bi bi-plus"></i>
+                    </a>
+                
+                <span style="cursor: pointer; margin-left: 5px;">...</span></p>              
+            </td>
+            <td>order</td>
+            <td><button style="width: 12px; height: 12px; border-radius: 50%; border: none;  cursor: pointer; outline: none;  background-color:#ff8698; margin-right:15px!important" id="button575" onclick="changeColorOrder(575, 2)" class="buttonNew red" data-priority="2" title="Medium"></button>ord-0002        
+                
+            </td>
+            <td>26th Nov 24 - 6th Dec 24</td>
+            <td> <span style="color: green;">148,500.00</span></td>
+            <td> <span style="color: grey;">500.00</span></td>
+            <td> <span style="color: green;">138000.00</span></td>
+            <td> <span style="color: red;">0</span></td>
+            <td> <span style="color: red;">0</span></td>
+            <td> <span style="color: orange;">0</span></td>
+            <td> <span style="color: orange;">10500.00</span></td>
+            <td><br><br><div class="avatar-wrapper"></div></td>
+
+            <td><span class="square-label on-hold-label">Processing</span> <span class="ms-2">0 / 0</span></td>
+            <td><button type="button" id="stbutton_575" class=" status-button  dropdown-toggle dd-toggle" style="color:#F59802!important; border: 1px solid #F59802 !important; " data-bs-toggle="dropdown">vvcc</button>
+                                            <ul class="dropdown-menu new-menu dropshow">
+                                                <li><a class="dropdown-item selid575 selected28" id="selectOptionValue_575" href="javascript:void(0);" onclick="changestatusNew(575,28)">Pickup 1</a></li><li><a class="dropdown-item selid575 selected29" id="selectOptionValue_575" href="javascript:void(0);" onclick="changestatusNew(575,29)">Pickup 2</a></li><li><a class="dropdown-item selid575 selected44" id="selectOptionValue_575" href="javascript:void(0);" onclick="changestatusNew(575,44)">standard</a></li><li><a class="dropdown-item selid575 selected78" id="selectOptionValue_575" href="javascript:void(0);" onclick="changestatusNew(575,78)">shirt2</a></li><li><a class="dropdown-item selid575 selected88" id="selectOptionValue_575" href="javascript:void(0);" onclick="changestatusNew(575,88)">rrtyyy</a></li><li><a class="dropdown-item selid575 selected89" id="selectOptionValue_575" href="javascript:void(0);" onclick="changestatusNew(575,89)">23</a></li><li><a class="dropdown-item selid575 selected90" id="selectOptionValue_575" href="javascript:void(0);" onclick="changestatusNew(575,90)">bv</a></li><li><a class="dropdown-item selid575 selected92" id="selectOptionValue_575" href="javascript:void(0);" onclick="changestatusNew(575,92)">vvcc</a></li>
+                                            </ul></td>
+            <td>26th Nov 2024 06:59:03</td>
+
+            
+                                            
+         </tr></tbody>
+                                    </table>
+
+
+
+<script>
+// Get a reference to the table body element
+const tableBody = document.getElementById('ordersManagmentTable');
+
+// Function to create a placeholder row
+function createPlaceholderRow() {
+  const row = document.createElement('tr');
+  const columns = [
+    '<div class="placeholder wide"></div>',
+    '<div class="placeholder"></div>',
+    '<div class="placeholder small"></div>',
+    '<div class="placeholder small"></div>',
+    '<div class="placeholder"></div>',
+    '<div class="placeholder small"></div>',
+    '<div class="placeholder wide"></div>',
+    '<div class="placeholder"></div>',
+    '<div class="placeholder small"></div>',
+    '<div class="placeholder small"></div>',
+    '<div class="placeholder"></div>',
+    '<div class="placeholder small"></div>',
+    '<div class="placeholder small"></div>',
+    '<div class="placeholder small"></div>',
+    '<div class="placeholder"></div>', '<div class="placeholder small"></div>',
+    '<div class="placeholder small"></div>',
+    '<div class="placeholder"></div>'
+  ];
+
+  columns.forEach(html => {
+    const cell = document.createElement('td');
+    cell.innerHTML = html;
+    row.appendChild(cell);
+  });
+  return row;
+}
+
+// Remove the previous table body content
+tableBody.innerHTML = '';
+
+// Create a new table body (this part is actually redundant in most cases,
+// as modifying innerHTML on the existing tableBody will achieve the same)
+// const newTableBody = document.createElement('tbody');
+// newTableBody.id = 'ordersManagmentTable'; // Ensure it has the correct ID
+
+// Add the new rows to the (existing) table body
+for (let i = 0; i < 7; i++) {
+  tableBody.appendChild(createPlaceholderRow());
+}
+
+// If you were to create a *new* tbody element, you would need to replace the old one
+// in the DOM. However, using innerHTML = '' and then appending to the existing
+// tableBody is the more common and efficient approach.
+// If you did create a new tbody:
+// const table = tableBody.parentNode; // Get the parent table
+// table.replaceChild(newTableBody, tableBody);
+// tableBody = newTableBody; // Update the tableBody reference</script>
+
+</body>
+</html>
